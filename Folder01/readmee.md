@@ -17,18 +17,4 @@ void BubbleSort(int *arr, int n) {
         }
     }
 }
-int main() {
-    int n;
-    cin>>n;
-    int *arr = new int[n];
-    //int *arr = (int*)malloc(n * sizeof(int));
-
-    for(int i=0; i<n; i++)
-        cin>> *(arr + i);    //arr[i]
-
-    BubbleSort(arr, n);      //&arr[0]
-
-    for(int i=0; i<n; i++)
-        cout << *(arr +i) << " ";   //arr[i]
-}
 ```
